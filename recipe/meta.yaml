@@ -1,5 +1,5 @@
 {% set name = "plum-py" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/plum-py-{{ version }}.tar.gz
-  sha256: 976168a8f7cb84e6bf4e7d0642c6fe29b07b8ed2e802bdc1359f2752dffbca80
+  sha256: 6d0bdf7aefa10e519d2902827dee2f96a554e55f04064c978197714b26ca1ab9
 
 build:
   number: 0
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://plum-py.readthedocs.io/en/latest/index.html
-  summary: "Pack/Unpack Memory"
+  summary: Pack/Unpack Memory
   license: MIT
   license_file: LICENSE
 
