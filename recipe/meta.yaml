@@ -1,5 +1,5 @@
 {% set name = "plum-py" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/plum-py-{{ version }}.tar.gz
-  sha256: 6d0bdf7aefa10e519d2902827dee2f96a554e55f04064c978197714b26ca1ab9
+  sha256: 7374a560e071a344ca6c1010e75eb376fb9f2f24d55fbc0befe3dbff914c3470
 
 build:
   number: 0
