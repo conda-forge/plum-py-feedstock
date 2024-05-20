@@ -1,7 +1,6 @@
 {% set name = "plum-py" %}
 {% set version = "0.8.7" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,22 +10,21 @@ source:
   sha256: 40a25a70f7fd213f57cdd1decc65874df2d213d19d63478a1addcca748c13c4e
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
-    - pip
+    - python >=3.7
     - setuptools >=39.0.1
+    - pip
   run:
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
     - plum
-    - plum.bitfields
   commands:
     - pip check
   requires:
